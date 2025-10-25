@@ -1,0 +1,166 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Hamza CHARAFI",
+    "title": "Senior Front-End Developer - ReactJS",
+    "subtitle": "Specialized in React.js, Next.js & TypeScript",
+    "description": "9+ years of experience building scalable web applications with modern technologies. Passionate about creating exceptional user experiences and writing clean, maintainable code.",
+    "cta": {
+      "projects": "View Projects",
+      "contact": "Get in Touch",
+      "resume": "Download Resume"
+    },
+    "scrollDown": "Scroll Down"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know me better",
+    "intro": "Senior Front-End Developer with 9+ years of experience",
+    "bio": {
+      "paragraph1": "I'm a Senior Front-End Developer with over 9 years of experience in building robust and scalable web applications. My expertise lies in the React.js ecosystem, including Next.js, TypeScript, and modern state management solutions like Redux Toolkit and Zustand.",
+      "paragraph2": "Throughout my career, I've worked with prestigious companies like Ekino, La Réunion Aérienne, Disneyland Paris, and Capgemini, delivering high-quality solutions that improve user experience and business outcomes. I specialize in creating reusable components, optimizing performance, and implementing best practices.",
+      "paragraph3": "I'm passionate about clean code, test-driven development, and continuous learning. I actively follow industry trends through platforms like Udemy, Frontend Masters, and Egghead, and contribute to team success through code reviews, pair programming, and knowledge sharing."
+    },
+    "stats": {
+      "experience": "Years Experience",
+      "projects": "Projects Completed",
+      "companies": "Companies Worked",
+      "technologies": "Technologies"
+    },
+    "education": {
+      "title": "Education",
+      "degree": "Master's Degree",
+      "field": "Computer Science and Information Systems",
+      "institution": "FP BENI-MELLAL",
+      "year": "2016"
+    },
+    "languages": {
+      "title": "Languages",
+      "french": "French",
+      "english": "English",
+      "fluent": "Fluent",
+      "intermediate": "Intermediate"
+    },
+    "learning": {
+      "title": "Continuous Learning",
+      "platforms": "Learning Platforms"
+    },
+    "downloadCV": "Download Resume"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "subtitle": "My professional journey",
+    "present": "Present",
+    "viewMore": "View Details",
+    "viewLess": "Hide Details",
+    "keyAchievements": "Key Achievements",
+    "technologies": "Technologies Used",
+    "projectOverview": "Project Overview",
+    "analysis": "Analysis & Planning",
+    "development": "Development",
+    "testing": "Testing & Integration",
+    "frontend": "Front-End Development",
+    "backend": "Back-End Development"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Things I've built",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "viewDemo": "Live Demo",
+    "sourceCode": "Source Code",
+    "comingSoon": "Coming Soon",
+    "technologies": "Built with",
+    "allProjects": "View All Projects",
+    "featured": "Featured Projects"
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "subtitle": "Technologies I work with",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools & Testing",
+      "methodologies": "Methodologies"
+    },
+    "proficiency": "Proficiency",
+    "yearsExp": "years experience"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together",
+    "description": "I'm currently open to new opportunities and interesting projects. Whether you have a question or just want to say hi, feel free to reach out!",
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "John Doe",
+      "email": "Your Email",
+      "emailPlaceholder": "john@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Project Inquiry",
+      "message": "Your Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! I'll get back to you soon.",
+      "error": "Failed to send message. Please try again or email me directly.",
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email"
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "availability": "Availability",
+      "status": "Open to opportunities"
+    },
+    "social": {
+      "title": "Connect with me",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "Email"
+    },
+    "or": "Or email me directly at"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "designed": "Designed & Built by",
+    "madeWith": "Made with",
+    "love": "love",
+    "and": "and",
+    "coffee": "coffee",
+    "in": "in",
+    "location": "France"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "tryAgain": "Try Again",
+    "backToTop": "Back to Top",
+    "readMore": "Read More",
+    "readLess": "Read Less",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "close": "Close",
+    "open": "Open",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode",
+    "toggle": "Toggle Theme"
+  },
+  "language": {
+    "en": "English",
+    "fr": "French",
+    "toggle": "Change Language"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Salut, je suis",
+    "name": "Hamza CHARAFI",
+    "title": "Développeur Front-End Senior - ReactJS",
+    "subtitle": "Spécialisé en React.js, Next.js & TypeScript",
+    "description": "Plus de 9 ans d'expérience dans la création d'applications web évolutives avec des technologies modernes. Passionné par la création d'expériences utilisateur exceptionnelles et l'écriture de code propre et maintenable.",
+    "cta": {
+      "projects": "Voir les Projets",
+      "contact": "Me Contacter",
+      "resume": "Télécharger CV"
+    },
+    "scrollDown": "Défiler vers le bas"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "subtitle": "Apprenez à me connaître",
+    "intro": "Développeur Front-End Senior avec plus de 9 ans d'expérience",
+    "bio": {
+      "paragraph1": "Je suis un Développeur Front-End Senior avec plus de 9 ans d'expérience dans la création d'applications web robustes et évolutives. Mon expertise réside dans l'écosystème React.js, incluant Next.js, TypeScript et les solutions modernes de gestion d'état comme Redux Toolkit et Zustand.",
+      "paragraph2": "Tout au long de ma carrière, j'ai travaillé avec des entreprises prestigieuses comme Ekino, La Réunion Aérienne, Disneyland Paris et Capgemini, en livrant des solutions de haute qualité qui améliorent l'expérience utilisateur et les résultats commerciaux. Je me spécialise dans la création de composants réutilisables, l'optimisation des performances et la mise en œuvre des meilleures pratiques.",
+      "paragraph3": "Je suis passionné par le code propre, le développement piloté par les tests et l'apprentissage continu. Je suis activement les tendances de l'industrie via des plateformes comme Udemy, Frontend Masters et Egghead, et contribue au succès de l'équipe par des revues de code, du pair programming et du partage de connaissances."
+    },
+    "stats": {
+      "experience": "Années d'Expérience",
+      "projects": "Projets Complétés",
+      "companies": "Entreprises",
+      "technologies": "Technologies"
+    },
+    "education": {
+      "title": "Formation",
+      "degree": "Master",
+      "field": "Informatique et Systèmes d'Information",
+      "institution": "FP BENI-MELLAL",
+      "year": "2016"
+    },
+    "languages": {
+      "title": "Langues",
+      "french": "Français",
+      "english": "Anglais",
+      "fluent": "Courant",
+      "intermediate": "Intermédiaire"
+    },
+    "learning": {
+      "title": "Formation Continue",
+      "platforms": "Plateformes d'Apprentissage"
+    },
+    "downloadCV": "Télécharger CV"
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "subtitle": "Mon parcours professionnel",
+    "present": "Présent",
+    "viewMore": "Voir Détails",
+    "viewLess": "Masquer Détails",
+    "keyAchievements": "Réalisations Clés",
+    "technologies": "Technologies Utilisées",
+    "projectOverview": "Aperçu du Projet",
+    "analysis": "Analyse & Planification",
+    "development": "Développement",
+    "testing": "Tests & Intégration",
+    "frontend": "Développement Front-End",
+    "backend": "Développement Back-End"
+  },
+  "projects": {
+    "title": "Projets Sélectionnés",
+    "subtitle": "Ce que j'ai construit",
+    "viewProject": "Voir le Projet",
+    "viewCode": "Voir le Code",
+    "viewDemo": "Démo en Ligne",
+    "sourceCode": "Code Source",
+    "comingSoon": "Bientôt Disponible",
+    "technologies": "Construit avec",
+    "allProjects": "Voir Tous les Projets",
+    "featured": "Projets Vedettes"
+  },
+  "skills": {
+    "title": "Compétences & Expertise",
+    "subtitle": "Technologies que j'utilise",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Outils & Tests",
+      "methodologies": "Méthodologies"
+    },
+    "proficiency": "Maîtrise",
+    "yearsExp": "ans d'expérience"
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "subtitle": "Travaillons ensemble",
+    "description": "Je suis actuellement ouvert à de nouvelles opportunités et projets intéressants. Que vous ayez une question ou que vous vouliez simplement dire bonjour, n'hésitez pas à me contacter !",
+    "form": {
+      "name": "Votre Nom",
+      "namePlaceholder": "Jean Dupont",
+      "email": "Votre Email",
+      "emailPlaceholder": "jean@exemple.com",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Demande de Projet",
+      "message": "Votre Message",
+      "messagePlaceholder": "Parlez-moi de votre projet...",
+      "send": "Envoyer le Message",
+      "sending": "Envoi...",
+      "success": "Message envoyé avec succès ! Je vous répondrai bientôt.",
+      "error": "Échec de l'envoi du message. Veuillez réessayer ou m'envoyer un email directement.",
+      "required": "Ce champ est requis",
+      "invalidEmail": "Veuillez entrer un email valide"
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Téléphone",
+      "location": "Localisation",
+      "availability": "Disponibilité",
+      "status": "Ouvert aux opportunités"
+    },
+    "social": {
+      "title": "Connectez avec moi",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "Email"
+    },
+    "or": "Ou envoyez-moi un email directement à"
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "designed": "Conçu & Développé par",
+    "madeWith": "Fait avec",
+    "love": "amour",
+    "and": "et",
+    "coffee": "café",
+    "in": "au",
+    "location": "Maroc"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "tryAgain": "Réessayer",
+    "backToTop": "Retour en Haut",
+    "readMore": "Lire Plus",
+    "readLess": "Lire Moins",
+    "learnMore": "En Savoir Plus",
+    "viewAll": "Voir Tout",
+    "close": "Fermer",
+    "open": "Ouvrir",
+    "next": "Suivant",
+    "previous": "Précédent"
+  },
+  "theme": {
+    "light": "Mode Clair",
+    "dark": "Mode Sombre",
+    "toggle": "Changer le Thème"
+  },
+  "language": {
+    "en": "Anglais",
+    "fr": "Français",
+    "toggle": "Changer la Langue"
+  }
+}
