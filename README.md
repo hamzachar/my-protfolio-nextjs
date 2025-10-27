@@ -100,6 +100,8 @@ my-portfolio-nextjs/
    ```env
    # Email configuration (Resend)
    RESEND_API_KEY=your_resend_api_key
+   CONTACT_EMAIL=your_email
+   FROM_EMAIL=onboarding@resend.dev
    ```
 
 4. **Run the development server**
