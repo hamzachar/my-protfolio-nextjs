@@ -320,6 +320,46 @@
         "category": "web"
       },
       {
+        "id": "dixit-game-online",
+        "title": "Dixit Game Online",
+        "description": "A modern, real-time implementation of the beloved Dixit board game built with Next.js 15, Socket.io, and MongoDB.",
+        "longDescription": "Experience the magic of storytelling and imagination in an online multiplayer environment. This real-time implementation brings the beloved Dixit board game to life with seamless WebSocket connections, persistent game state management, and an intuitive user interface.",
+        "image": "",
+        "tags": [
+          "Next.js",
+          "Socket.io",
+          "MongoDB",
+          "TypeScript",
+          "Tailwind CSS",
+          "Real-time",
+          "WebSockets"
+        ],
+        "liveUrl": "",
+        "githubUrl": "https://github.com/hamzachar/dixit-game-online-nextjs",
+        "featured": true,
+        "category": "web"
+      },
+      {
+        "id": "design-system-turborepo",
+        "title": "Design System with Turborepo",
+        "description": "A complete, production-ready design system built with Turborepo, React, TypeScript, Tailwind CSS, and Radix UI.",
+        "longDescription": "A scalable and maintainable design system architecture leveraging Turborepo's monorepo capabilities. Features a comprehensive component library built with Radix UI primitives, type-safe development with TypeScript, and consistent styling with Tailwind CSS.",
+        "image": "",
+        "tags": [
+          "Turborepo",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Radix UI",
+          "Monorepo",
+          "Design System"
+        ],
+        "liveUrl": "",
+        "githubUrl": "https://github.com/hamzachar/design-system-turborepo",
+        "featured": true,
+        "category": "web"
+      },
+      {
         "id": "portfolio-v2",
         "title": "Modern Portfolio Website",
         "description": "A modern, responsive portfolio template with animations, dark mode, and internationalization support.",
@@ -334,7 +374,7 @@
           "Server Components"
         ],
         "liveUrl": "",
-        "githubUrl": "https://github.com/hamzachar/portfolio",
+        "githubUrl": "https://github.com/hamzachar/my-protfolio-nextjs",
         "featured": true,
         "category": "web"
       }

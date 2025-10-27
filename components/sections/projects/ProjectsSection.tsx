@@ -5,7 +5,7 @@ export async function ProjectsSection() {
   const t = await getTranslations('projects');
 
   // Get projects from translations
-  const projectsCount = 3; // You know you have 3 projects
+  const projectsCount = 5; // You know you have 3 projects
   const projects = Array.from({ length: projectsCount }, (_, i) => {
     const proj = t.raw(`items.${i}`);
     return proj;

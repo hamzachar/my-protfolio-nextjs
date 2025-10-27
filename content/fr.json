@@ -320,6 +320,46 @@
         "category": "web"
       },
       {
+        "id": "dixit-game-online",
+        "title": "Jeu Dixit en Ligne",
+        "description": "Une implémentation moderne et en temps réel du célèbre jeu de société Dixit, construite avec Next.js 15, Socket.io et MongoDB.",
+        "longDescription": "Découvrez la magie de la narration et de l'imagination dans un environnement multijoueur en ligne. Cette implémentation en temps réel donne vie au célèbre jeu de société Dixit avec des connexions WebSocket fluides, une gestion persistante de l'état du jeu et une interface utilisateur intuitive.",
+        "image": "",
+        "tags": [
+          "Next.js",
+          "Socket.io",
+          "MongoDB",
+          "TypeScript",
+          "Tailwind CSS",
+          "Temps réel",
+          "WebSockets"
+        ],
+        "liveUrl": "",
+        "githubUrl": "https://github.com/hamzachar/dixit-game-online-nextjs",
+        "featured": true,
+        "category": "web"
+      },
+      {
+        "id": "design-system-turborepo",
+        "title": "Design System avec Turborepo",
+        "description": "Un design system complet et prêt pour la production, construit avec Turborepo, React, TypeScript, Tailwind CSS et Radix UI.",
+        "longDescription": "Une architecture de design system évolutive et maintenable tirant parti des capacités de monorepo de Turborepo. Comprend une bibliothèque de composants complète construite avec les primitives Radix UI, un développement type-safe avec TypeScript et un style cohérent avec Tailwind CSS.",
+        "image": "",
+        "tags": [
+          "Turborepo",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Radix UI",
+          "Monorepo",
+          "Design System"
+        ],
+        "liveUrl": "",
+        "githubUrl": "https://github.com/hamzachar/design-system-turborepo",
+        "featured": true,
+        "category": "web"
+      },
+      {
         "id": "portfolio-v2",
         "title": "Site Portfolio Moderne",
         "description": "Un template de portfolio moderne et responsive avec animations, mode sombre et support d'internationalisation.",
@@ -334,8 +374,8 @@
           "Server Components"
         ],
         "liveUrl": "",
-        "githubUrl": "https://github.com/hamzachar/portfolio",
-        "featured": false,
+        "githubUrl": "https://github.com/hamzachar/my-protfolio-nextjs",
+        "featured": true,
         "category": "web"
       }
     ]
