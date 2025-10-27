@@ -140,7 +140,7 @@ export function AboutClient({
                 </p>
               </div>
 
-              <Button asChild size="lg">
+              <Button asChild size="lg" className="w-full sm:w-auto">
                 <a href={cvFile} download>
                   <FiDownload className="mr-2" />
                   {downloadCV}

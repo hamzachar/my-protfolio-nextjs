@@ -78,9 +78,9 @@ export function ProjectCard({ project, labels }: ProjectCardProps) {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex gap-3 mt-auto">
+          <div className="flex flex-col sm:flex-row gap-3 mt-auto">
             {project.liveUrl && (
-              <Button asChild size="sm" className="flex-1">
+              <Button asChild size="sm" className="flex-1 w-full">
                 <a
                   href={project.liveUrl}
                   target="_blank"
@@ -94,7 +94,12 @@ export function ProjectCard({ project, labels }: ProjectCardProps) {
             )}
 
             {project.githubUrl && project.githubUrl !== '#' && (
-              <Button asChild variant="outline" size="sm" className="flex-1">
+              <Button
+                asChild
+                variant="outline"
+                size="sm"
+                className="flex-1 w-full"
+              >
                 <a
                   href={project.githubUrl}
                   target="_blank"

@@ -121,13 +121,15 @@ export function HeroClient({
           {/* CTA Buttons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-wrap items-center justify-center gap-4 mb-12"
+            className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-4 mb-12"
           >
-            <a href="#projects">
-              <Button size="lg">{ctaProjects}</Button>
+            <a href="#projects" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto">
+                {ctaProjects}
+              </Button>
             </a>
-            <a href="#contact">
-              <Button variant="outline" size="lg">
+            <a href="#contact" className="w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto">
                 {ctaContact}
               </Button>
             </a>
