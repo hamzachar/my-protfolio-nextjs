@@ -47,7 +47,7 @@ const itemVariants: Variants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: 'easeOut' as const, // ✅ Use string instead of array
+      ease: 'easeOut' as const, // Use string instead of array
     },
   },
 };
@@ -170,7 +170,7 @@ export function HeroClient({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          className="hidden md:block absolute bottom-8 left-1/2 -translate-x-1/2"
         >
           <motion.a
             href="#about"
