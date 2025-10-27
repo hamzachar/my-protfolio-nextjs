@@ -3,31 +3,28 @@
     "home": "Home",
     "about": "About",
     "experience": "Experience",
-    "projects": "Projects",
     "skills": "Skills",
+    "projects": "Projects",
     "contact": "Contact"
   },
   "hero": {
-    "greeting": "Hi, I'm",
-    "name": "Hamza CHARAFI",
-    "title": "Senior Front-End Developer - ReactJS",
-    "subtitle": "Specialized in React.js, Next.js & TypeScript",
-    "description": "9+ years of experience building scalable web applications with modern technologies. Passionate about creating exceptional user experiences and writing clean, maintainable code.",
+    "greeting": "Hello, I'm",
+    "title": "Senior Front-End Developer",
+    "subtitle": "Specialized in React.js, Next.js & TypeScript / Node.js, Express.js & NestJS",
+    "description": "Passionate about creating exceptional user experiences with modern web technologies.",
     "cta": {
       "projects": "View Projects",
-      "contact": "Get in Touch",
-      "resume": "Download Resume"
+      "contact": "Get in Touch"
     },
     "scrollDown": "Scroll Down"
   },
   "about": {
     "title": "About Me",
     "subtitle": "Get to know me better",
-    "intro": "Senior Front-End Developer with 9+ years of experience",
     "bio": {
-      "paragraph1": "I'm a Senior Front-End Developer with over 9 years of experience in building robust and scalable web applications. My expertise lies in the React.js ecosystem, including Next.js, TypeScript, and modern state management solutions like Redux Toolkit and Zustand.",
-      "paragraph2": "Throughout my career, I've worked with prestigious companies like Ekino, La Réunion Aérienne, Disneyland Paris, and Capgemini, delivering high-quality solutions that improve user experience and business outcomes. I specialize in creating reusable components, optimizing performance, and implementing best practices.",
-      "paragraph3": "I'm passionate about clean code, test-driven development, and continuous learning. I actively follow industry trends through platforms like Udemy, Frontend Masters, and Egghead, and contribute to team success through code reviews, pair programming, and knowledge sharing."
+      "paragraph1": "I'm a Senior Front-End Developer with 9 years of experience specializing in React.js and modern JavaScript frameworks.",
+      "paragraph2": "I have a proven track record of delivering high-quality, scalable web applications for major companies including Disney, Capgemini, and Ekino.",
+      "paragraph3": "My expertise lies in creating performant, accessible, and maintainable user interfaces while following best practices and industry standards."
     },
     "stats": {
       "experience": "Years Experience",
@@ -38,9 +35,7 @@
     "education": {
       "title": "Education",
       "degree": "Master's Degree",
-      "field": "Computer Science and Information Systems",
-      "institution": "FP BENI-MELLAL",
-      "year": "2016"
+      "field": "Computer Science and Information Systems"
     },
     "languages": {
       "title": "Languages",
@@ -51,69 +46,314 @@
     },
     "learning": {
       "title": "Continuous Learning",
-      "platforms": "Learning Platforms"
+      "platforms": "I regularly enhance my skills through:"
     },
-    "downloadCV": "Download Resume"
+    "downloadCV": "Download CV"
   },
   "experience": {
     "title": "Work Experience",
     "subtitle": "My professional journey",
     "present": "Present",
-    "viewMore": "View Details",
-    "viewLess": "Hide Details",
-    "keyAchievements": "Key Achievements",
     "technologies": "Technologies Used",
-    "projectOverview": "Project Overview",
-    "analysis": "Analysis & Planning",
-    "development": "Development",
-    "testing": "Testing & Integration",
-    "frontend": "Front-End Development",
-    "backend": "Back-End Development"
+    "achievements": "Key Achievements",
+    "items": [
+      {
+        "id": "ekino",
+        "company": "Ekino",
+        "position": "Senior Front-End Developer - React.js",
+        "location": "France",
+        "startDate": "2024-03",
+        "endDate": null,
+        "current": true,
+        "logo": "/images/companies/ekino.png",
+        "description": "Developed a web platform for product selection and search to optimize customer experience and facilitate access to technical solutions and specialty materials documentation.",
+        "achievements": [
+          "Collaborated closely with operational teams to adapt interfaces to industrial site requirements",
+          "Implemented complex user workflows for production data validation and quality control",
+          "Developed complex interfaces for real-time production data visualization using React 18 and TypeScript",
+          "Created advanced reusable components with modular and scalable architecture",
+          "Optimized performance for processing large industrial datasets (lazy loading, memoization)",
+          "Integrated REST APIs for data synchronization",
+          "Implemented advanced patterns (HOC, Render Props, Custom Hooks) for code reusability",
+          "Developed client-side caching logic to optimize performance",
+          "Developed robust unit and integration tests using Jest and React-Testing-Library",
+          "Actively participated in code reviews to maintain code quality and best practices"
+        ],
+        "technologies": [
+          "React",
+          "TypeScript",
+          "SASS",
+          "Jest",
+          "React-Testing-Library",
+          "Docker",
+          "Figma",
+          "GitLab CI/CD",
+          "GitFlow",
+          "Webpack",
+          "ESLint",
+          "Prettier",
+          "Storybook",
+          "TanStack Query",
+          "Playwright"
+        ]
+      },
+      {
+        "id": "reunion-aerienne",
+        "company": "La Réunion Aérienne",
+        "position": "Senior Front-End Developer React JS",
+        "location": "France",
+        "startDate": "2022-09",
+        "endDate": "2024-02",
+        "current": false,
+        "logo": "/images/companies/reunion.png",
+        "description": "Developed an application for automating contract management for agents and business developers.",
+        "achievements": [
+          "Participated in scope meetings and technical direction discussions",
+          "Analyzed and estimated User Stories for better task planning",
+          "Actively engaged in SCRUM ceremonies and JIRA task tracking",
+          "Integrated UX/UI mockups using Figma",
+          "Developed user interfaces and reusable components with React.js",
+          "Managed application state using Redux Toolkit",
+          "Handled asynchronous requests with CreateAsyncThunk",
+          "Proactively identified technical issues and proposed effective solutions",
+          "Wrote unit tests using Jest and React-Testing-Library",
+          "Conducted code reviews on every pull request",
+          "Regularly practiced pair programming"
+        ],
+        "technologies": [
+          "React",
+          "Redux-Toolkit",
+          "Redux Thunk",
+          "TypeScript",
+          "SASS",
+          "Jest",
+          "React-Testing-Library",
+          "Docker",
+          "Figma",
+          "GitLab CI/CD",
+          "GitFlow"
+        ]
+      },
+      {
+        "id": "disneyland",
+        "company": "Disneyland Paris",
+        "position": "Front-End Developer ReactJS",
+        "location": "France",
+        "startDate": "2021-08",
+        "endDate": "2022-08",
+        "current": false,
+        "logo": "/images/companies/disney.png",
+        "description": "Developed and maintained a booking application, including bug fixes and enhancements.",
+        "achievements": [
+          "Analyzed technical and functional specifications",
+          "Tracked tasks using Jira for efficient project management",
+          "Maintained organized documentation on Confluence",
+          "Actively participated in SAFe agile ceremonies",
+          "Maintained and evolved application state management using Redux and Context API",
+          "Integrated UX/UI mockups from Figma",
+          "Created reusable components with React.js",
+          "Implemented routing module using React Router",
+          "Consumed GraphQL APIs with Apollo Client",
+          "Implemented unit tests using Jest, Enzyme, and e2e tests using Cypress",
+          "Conducted code reviews",
+          "Regularly engaged in pair programming"
+        ],
+        "technologies": [
+          "React",
+          "Redux",
+          "Redux Thunk",
+          "TypeScript",
+          "Styled-Components",
+          "GraphQL",
+          "Apollo Client",
+          "Jest",
+          "Enzyme",
+          "Cypress",
+          "Figma",
+          "GitLab CI/CD",
+          "GitFlow",
+          "Jira"
+        ]
+      },
+      {
+        "id": "capgemini",
+        "company": "Capgemini",
+        "position": "Full-Stack Developer ReactJS / NodeJS",
+        "location": "France",
+        "startDate": "2018-09",
+        "endDate": "2021-08",
+        "current": false,
+        "logo": "/images/companies/capgemini.png",
+        "description": "Developed and maintained scalable applications with continuous evolution and maintenance support.",
+        "achievements": [
+          "Analyzed technical and functional specifications",
+          "Tracked tasks using Jira for efficient project management",
+          "Developed robust REST APIs using Express.js",
+          "Implemented authentication management with JWT (JSON Web Tokens)",
+          "Designed database models using Sequelize schemas",
+          "Utilized Express.js middleware for authentication, data validation, and error handling",
+          "Implemented data validation using express-validator for data integrity",
+          "Identified and resolved performance issues using Redis caching",
+          "Efficiently managed asynchronous requests using Redux Thunk",
+          "Created dynamic routes using React Router",
+          "Integrated UX/UI mockups from Figma",
+          "Developed state management module using Redux",
+          "Performed API testing using Postman",
+          "Applied Clean Code best practices"
+        ],
+        "technologies": [
+          "React",
+          "Redux",
+          "Context API",
+          "Node.js",
+          "Express.js",
+          "TypeScript",
+          "Sequelize",
+          "Mongoose",
+          "Redis",
+          "Styled-Components",
+          "PostgreSQL",
+          "MongoDB",
+          "JWT",
+          "GitLab CI/CD",
+          "GitFlow",
+          "Jira"
+        ]
+      },
+      {
+        "id": "2wls",
+        "company": "2WLS",
+        "position": "Full-Stack Developer ReactJS / NodeJS",
+        "location": "France",
+        "startDate": "2016-09",
+        "endDate": "2018-08",
+        "current": false,
+        "logo": "/images/companies/2wls.png",
+        "description": "Developed loyalty solutions and growth marketing initiatives.",
+        "achievements": [
+          "Analyzed detailed technical and functional specifications",
+          "Participated in technical validation meetings",
+          "Set up web server using Node.js and Express.js",
+          "Developed and consumed REST APIs using Express.js",
+          "Connected server to MySQL using Sequelize",
+          "Developed models and generated tables via Sequelize",
+          "Implemented authentication with JWT",
+          "Contributed to developing a centralized loyalty system in Node.js and React.js",
+          "Developed a 'Raffle' microservice for participant rewards using Express.js and Redis",
+          "Managed state and asynchronous requests with Redux",
+          "Integrated UX/UI mockups from Figma",
+          "Designed components and pages for Gifts, Contact Us, Footer, Menus, Forms",
+          "Developed navigation module using React Router",
+          "Performed API testing using Postman"
+        ],
+        "technologies": [
+          "React",
+          "Redux",
+          "Redux Thunk",
+          "TypeScript",
+          "Styled-Components",
+          "Node.js",
+          "Express.js",
+          "MySQL",
+          "Sequelize",
+          "Redis",
+          "JWT",
+          "Axios",
+          "Jest",
+          "Figma",
+          "GitLab CI/CD",
+          "GitFlow",
+          "Jira",
+          "Postman"
+        ]
+      }
+    ]
   },
   "projects": {
-    "title": "Featured Projects",
+    "title": "Featured projects",
     "subtitle": "Things I've built",
-    "viewProject": "View Project",
+    "viewDemo": "View Demo",
     "viewCode": "View Code",
-    "viewDemo": "Live Demo",
-    "sourceCode": "Source Code",
-    "comingSoon": "Coming Soon",
-    "technologies": "Built with",
-    "allProjects": "View All Projects",
-    "featured": "Featured Projects"
+    "featured": "Featured",
+    "items": [
+      {
+        "id": "disney-booking-app",
+        "title": "Disney Booking App",
+        "description": "A comprehensive booking application for Disney parks featuring real-time availability, secure user authentication, and integrated payment processing.",
+        "longDescription": "Developed a full-featured booking platform for Disneyland Paris that handles thousands of daily reservations. The application provides real-time availability checking, secure payment processing through Stripe, and a seamless user experience with TypeScript and styled-components.",
+        "image": "/images/projects/disney-booking.png",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Styled-Components",
+          "Redux",
+          "GraphQL",
+          "Apollo Client",
+          "Stripe",
+          "Jest",
+          "Cypress"
+        ],
+        "liveUrl": "https://book.disneylandparis.com/",
+        "githubUrl": null,
+        "featured": true,
+        "category": "fullstack"
+      },
+      {
+        "id": "arkema-platform",
+        "title": "Arkema Industrial Platform",
+        "description": "A web platform for product selection and search to optimize customer experience and facilitate access to technical solutions.",
+        "longDescription": "Built an enterprise-grade industrial platform for Arkema that streamlines product discovery and documentation access. Features include advanced search capabilities, real-time data visualization, and comprehensive technical documentation management.",
+        "image": "/images/projects/arkema.png",
+        "tags": [
+          "React",
+          "TypeScript",
+          "SCSS",
+          "Storybook",
+          "TanStack Query",
+          "Jest",
+          "React-Testing-Library",
+          "Playwright"
+        ],
+        "liveUrl": "https://www.arkema.com/",
+        "githubUrl": null,
+        "featured": true,
+        "category": "web"
+      },
+      {
+        "id": "portfolio-v2",
+        "title": "Modern Portfolio Website",
+        "description": "A modern, responsive portfolio template with animations, dark mode, and internationalization support.",
+        "longDescription": "Created a cutting-edge portfolio website using Next.js 15 with App Router, featuring smooth animations with Framer Motion, full internationalization support, and optimized performance with Server Components.",
+        "image": "",
+        "tags": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion",
+          "next-intl",
+          "Server Components"
+        ],
+        "liveUrl": "",
+        "githubUrl": "https://github.com/hamzachar/portfolio",
+        "featured": true,
+        "category": "web"
+      }
+    ]
   },
   "skills": {
-    "title": "Skills & Expertise",
+    "title": "Technical Skills",
     "subtitle": "Technologies I work with",
     "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "tools": "Tools & Testing",
-      "methodologies": "Methodologies"
-    },
-    "proficiency": "Proficiency",
-    "yearsExp": "years experience"
+      "frontend": "Frontend Development",
+      "backend": "Backend Development",
+      "tools": "Tools & Technologies",
+      "methodologies": "Methodologies & Practices"
+    }
   },
   "contact": {
     "title": "Get In Touch",
     "subtitle": "Let's work together",
-    "description": "I'm currently open to new opportunities and interesting projects. Whether you have a question or just want to say hi, feel free to reach out!",
-    "form": {
-      "name": "Your Name",
-      "namePlaceholder": "John Doe",
-      "email": "Your Email",
-      "emailPlaceholder": "john@example.com",
-      "subject": "Subject",
-      "subjectPlaceholder": "Project Inquiry",
-      "message": "Your Message",
-      "messagePlaceholder": "Tell me about your project...",
-      "send": "Send Message",
-      "sending": "Sending...",
-      "success": "Message sent successfully! I'll get back to you soon.",
-      "error": "Failed to send message. Please try again or email me directly.",
-      "required": "This field is required",
-      "invalidEmail": "Please enter a valid email"
-    },
+    "description": "I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!",
     "info": {
       "email": "Email",
       "phone": "Phone",
@@ -121,13 +361,23 @@
       "availability": "Availability",
       "status": "Open to opportunities"
     },
-    "social": {
-      "title": "Connect with me",
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "email": "Email"
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What's this about?",
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! I'll get back to you soon.",
+      "error": "Failed to send message. Please try again."
     },
-    "or": "Or email me directly at"
+    "social": {
+      "title": "Connect with me"
+    }
   },
   "footer": {
     "rights": "All rights reserved.",
