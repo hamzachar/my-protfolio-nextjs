@@ -145,7 +145,7 @@ export function ExperienceCard({ experience, labels }: ExperienceCardProps) {
                 ) : (
                   <>
                     <FiChevronDown className="w-4 h-4" />
-                    Show {experience.achievements.length} key achievements
+                    Show key achievements
                   </>
                 )}
               </motion.button>
