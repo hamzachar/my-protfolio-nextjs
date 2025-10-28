@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { Inter } from 'next/font/google';
 import { Navbar } from '@/components/common/Navbar';
 import { Footer } from '@/components/common/Footer';
+import { ScrollProgress } from '@/components/ui/ScrollProgress';
 import { ScrollToTop } from '@/components/common/ScrollToTop';
 import { routing } from '@/i18n/routing';
 import '../globals.css';
@@ -52,6 +53,7 @@ export default async function LocaleLayout({
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
+          <ScrollProgress />
           <main>{children}</main>
           <Footer />
           <ScrollToTop />

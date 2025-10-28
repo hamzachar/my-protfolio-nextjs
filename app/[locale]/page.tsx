@@ -1,9 +1,40 @@
+import dynamic from 'next/dynamic';
+
 import { HeroSection } from '@/components/sections/hero/HeroSection';
 import { AboutSection } from '@/components/sections/about/AboutSection';
-import { ExperienceSection } from '@/components/sections/experiences/ExperienceSection';
-import { SkillsSection } from '@/components/sections/skills/SkillsSection';
-import { ProjectsSection } from '@/components/sections/projects/ProjectsSection';
-import { ContactSection } from '@/components/sections/contact/ContactSection';
+
+// Dynamically import sections below to optimize performance
+const ExperienceSection = dynamic(
+  () =>
+    import('@/components/sections/experiences/ExperienceSection').then(
+      m => m.ExperienceSection
+    ),
+  { ssr: true }
+);
+
+const SkillsSection = dynamic(
+  () =>
+    import('@/components/sections/skills/SkillsSection').then(
+      m => m.SkillsSection
+    ),
+  { ssr: true }
+);
+
+const ProjectsSection = dynamic(
+  () =>
+    import('@/components/sections/projects/ProjectsSection').then(
+      m => m.ProjectsSection
+    ),
+  { ssr: true }
+);
+
+const ContactSection = dynamic(
+  () =>
+    import('@/components/sections/contact/ContactSection').then(
+      m => m.ContactSection
+    ),
+  { ssr: true }
+);
 
 export default function Home() {
   return (
