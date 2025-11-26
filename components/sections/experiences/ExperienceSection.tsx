@@ -5,7 +5,7 @@ export async function ExperienceSection() {
   const t = await getTranslations('experience');
 
   // Get experiences from translations
-  const experiencesCount = 5;
+  const experiencesCount = 4;
   const experiences = Array.from({ length: experiencesCount }, (_, i) => {
     const exp = t.raw(`items.${i}`);
     return exp;
