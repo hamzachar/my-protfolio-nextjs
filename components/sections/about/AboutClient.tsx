@@ -89,9 +89,11 @@ export function AboutClient({
   const cvFile = cvFiles[locale];
 
   return (
-    <section id="about" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-bl from-secondary/5 via-accent/5 to-primary/5" />
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.1),transparent_50%)]" />
+    <section
+      id="about"
+      className="py-20 relative overflow-hidden section-gradient-about"
+    >
+      <div className="absolute inset-0 -z-10 bg-gradient-to-bl from-purple-500/10 via-pink-500/10 to-blue-500/10" />
 
       <Container>
         <SectionHeader title={title} subtitle={subtitle} />

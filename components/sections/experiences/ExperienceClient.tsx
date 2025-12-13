@@ -24,11 +24,14 @@ export function ExperienceClient({
   labels,
 }: ExperienceClientProps) {
   return (
-    <section id="experience" className="py-20 relative overflow-hidden">
+    <section
+      id="experience"
+      className="py-20 relative overflow-hidden section-gradient-experience"
+    >
       {/* Background gradient */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-accent/5 via-primary/5 to-secondary/5" />
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl -z-10" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl -z-10" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-cyan-500/10 via-blue-500/10 to-purple-500/10" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl -z-10" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-3xl -z-10" />
 
       <Container>
         <SectionHeader title={title} subtitle={subtitle} />

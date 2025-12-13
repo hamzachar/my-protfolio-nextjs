@@ -24,10 +24,12 @@ export function ProjectsClient({
   labels,
 }: ProjectsClientProps) {
   return (
-    <section id="projects" className="py-20 relative overflow-hidden">
+    <section
+      id="projects"
+      className="py-20 relative overflow-hidden section-gradient-projects"
+    >
       {/* Background gradient */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-tl from-primary/5 via-secondary/5 to-accent/5" />
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_bottom_left,rgba(139,92,246,0.1),transparent_50%)]" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-tl from-purple-500/10 via-blue-500/10 to-cyan-500/10" />
 
       <Container>
         <SectionHeader title={title} subtitle={subtitle} />

@@ -38,9 +38,12 @@ export function SkillsClient({
   categories,
 }: SkillsClientProps) {
   return (
-    <section id="skills" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-accent/5 via-primary/5 to-secondary/5" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-3xl -z-10" />
+    <section
+      id="skills"
+      className="py-20 relative overflow-hidden section-gradient-skills"
+    >
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-blue-500/10 via-cyan-500/10 to-purple-500/10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-cyan-500/10 rounded-full blur-3xl -z-10" />
 
       <Container>
         <SectionHeader title={title} subtitle={subtitle} />
