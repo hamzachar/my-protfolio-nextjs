@@ -82,6 +82,13 @@ export const SKILLS: Skill[] = [
     color: '#000000',
   },
   {
+    name: 'NestJS',
+    level: 75,
+    category: 'backend',
+    icon: 'SiNestjs',
+    color: '#E0234E',
+  },
+  {
     name: 'MongoDB',
     level: 70,
     category: 'backend',
@@ -119,6 +126,20 @@ export const SKILLS: Skill[] = [
     color: '#C21325',
   },
   {
+    name: 'Cypress',
+    level: 75,
+    category: 'tools',
+    icon: 'SiCypress',
+    color: '#17202C',
+  },
+  {
+    name: 'Playwright',
+    level: 80,
+    category: 'tools',
+    icon: 'SiTestcafe',
+    color: '#2EAD33',
+  },
+  {
     name: 'Figma',
     level: 75,
     category: 'tools',
@@ -149,6 +170,11 @@ export const SKILLS: Skill[] = [
   {
     name: 'REST API',
     level: 85,
+    category: 'methodologies',
+  },
+  {
+    name: 'GraphQL (Apollo)',
+    level: 75,
     category: 'methodologies',
   },
   {

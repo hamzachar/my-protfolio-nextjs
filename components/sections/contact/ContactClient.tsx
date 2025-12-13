@@ -49,7 +49,7 @@ export function ContactClient({
 }: ContactClientProps) {
   return (
     <section id="contact" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-linear-to-tr from-primary/5 via-accent/5 to-secondary/5" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-primary/5 via-accent/5 to-secondary/5" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(6,182,212,0.1),transparent_50%)]" />
 
       <Container>

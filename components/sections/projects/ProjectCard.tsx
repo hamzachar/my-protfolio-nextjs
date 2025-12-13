@@ -34,7 +34,7 @@ export function ProjectCard({ project, labels }: ProjectCardProps) {
               className="object-cover group-hover:scale-110 transition-transform duration-300"
             />
           ) : (
-            <div className="w-full h-full bg-linear-to-br from-primary/20 to-secondary/20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+            <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
               <FiGithub className="w-16 h-16 text-muted-foreground/50" />
             </div>
           )}

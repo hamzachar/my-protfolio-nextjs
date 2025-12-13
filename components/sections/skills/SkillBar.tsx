@@ -53,7 +53,7 @@ export function SkillBar({ skill, index, gradientColor }: SkillBarProps) {
           transition={{ duration: 1, ease: 'easeOut', delay: index * 0.1 }}
           className={`h-full ${gradientColor} rounded-full relative`}
         >
-          <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent animate-shimmer" />
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer" />
         </motion.div>
       </div>
     </motion.div>

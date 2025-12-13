@@ -43,7 +43,7 @@ export function ExperienceCard({ experience, labels }: ExperienceCardProps) {
     <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
       <div className="relative">
         {/* Colored accent bar */}
-        <div className="absolute left-0 top-0 bottom-0 w-1 bg-linear-to-b from-primary via-secondary to-accent" />
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-secondary to-accent" />
 
         <div className="pl-6">
           {/* Header with Logo */}
@@ -60,7 +60,7 @@ export function ExperienceCard({ experience, labels }: ExperienceCardProps) {
                 />
               </div>
             ) : (
-              <div className="w-16 h-16 shrink-0 rounded-lg bg-linear-to-br from-primary/20 to-secondary/20 flex items-center justify-center shadow-md">
+              <div className="w-16 h-16 shrink-0 rounded-lg bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center shadow-md">
                 <FaBuilding className="w-8 h-8 text-primary" />
               </div>
             )}

@@ -1,18 +1,30 @@
 # 🚀 My Portfolio - Next.js
 
-A modern, responsive portfolio website built with Next.js 16, TypeScript, and Tailwind CSS. Features multilingual support (English/French), dark mode, smooth animations, and a contact form.
+A modern, high-performance portfolio website built with **Next.js 16**, TypeScript, and Tailwind CSS. Leverages cutting-edge features like Server Components, Server Actions, and streaming SSR for optimal performance and SEO.
+
+> 📖 **[Read the full Next.js 16 improvements guide](./NEXTJS16_IMPROVEMENTS.md)**
 
 ## ✨ Features
+
+### Core Features
 
 - 🌐 **Internationalization (i18n)** - English and French support with next-intl
 - 🌙 **Dark Mode** - Seamless theme switching with next-themes
 - 🎨 **Modern UI** - Beautiful design with Tailwind CSS 4
 - ✨ **Smooth Animations** - Powered by Framer Motion
 - 📱 **Fully Responsive** - Mobile-first design approach
-- 📧 **Contact Form** - Integrated email functionality with Resend
-- 🎯 **TypeScript** - Full type safety
-- 🔍 **SEO Optimized** - Built with Next.js best practices
-- 🎭 **Component-Based** - Reusable and maintainable architecture
+- 📧 **Contact Form** - Server Actions with progressive enhancement
+- 🎯 **TypeScript** - Full type safety throughout
+- 🔍 **SEO Optimized** - Dynamic metadata generation with i18n
+
+### Next.js 16 Optimizations
+
+- ⚡ **Server Components** - Zero JavaScript for static content
+- 🌊 **Streaming SSR** - Progressive rendering with Suspense boundaries
+- 🎬 **Server Actions** - Simplified data mutations without API routes
+- 💾 **Smart Caching** - Optimized data fetching strategies
+- 🏗️ **Static Generation** - Pre-rendered pages for instant loads
+- 🎭 **Component-Based** - Clean separation of server/client components
 
 ## 🛠️ Tech Stack
 

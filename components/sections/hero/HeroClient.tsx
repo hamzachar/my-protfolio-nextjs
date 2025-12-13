@@ -69,7 +69,7 @@ export function HeroClient({
       className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden"
     >
       {/* Background gradient */}
-      <div className="absolute inset-0 -z-10 bg-linear-to-br from-primary/5 via-secondary/5 to-accent/5" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5" />
 
       <Container>
         <motion.div

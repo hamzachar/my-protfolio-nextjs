@@ -90,7 +90,7 @@ export function AboutClient({
 
   return (
     <section id="about" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-linear-to-bl from-secondary/5 via-accent/5 to-primary/5" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-bl from-secondary/5 via-accent/5 to-primary/5" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.1),transparent_50%)]" />
 
       <Container>
@@ -101,7 +101,7 @@ export function AboutClient({
           <SlideIn direction="left">
             <div className="relative aspect-square max-w-md mx-auto">
               <motion.div
-                className="absolute inset-0 bg-linear-to-br from-primary to-secondary rounded-2xl rotate-6 opacity-20"
+                className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-2xl rotate-6 opacity-20"
                 animate={{
                   rotate: [6, 8, 6],
                   scale: [1, 1.05, 1],
@@ -164,7 +164,7 @@ export function AboutClient({
                 >
                   <Card className="text-center relative overflow-hidden group">
                     <div
-                      className={`absolute inset-0 bg-linear-to-br ${colors.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
+                      className={`absolute inset-0 bg-gradient-to-br ${colors.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
                     />
 
                     <div className="relative">
@@ -176,7 +176,7 @@ export function AboutClient({
                         <Icon className="w-8 h-8 text-primary" />
                       </motion.div>
 
-                      <div className="text-4xl font-bold mb-2 bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
+                      <div className="text-4xl font-bold mb-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                         {stat.value}
                       </div>
 
@@ -242,7 +242,7 @@ export function AboutClient({
                   </div>
                   <div className="h-2 bg-muted rounded-full overflow-hidden">
                     <motion.div
-                      className="h-full bg-linear-to-r from-primary to-secondary rounded-full"
+                      className="h-full bg-gradient-to-r from-primary to-secondary rounded-full"
                       initial={{ width: 0 }}
                       whileInView={{ width: '100%' }}
                       viewport={{ once: true }}
@@ -260,7 +260,7 @@ export function AboutClient({
                   </div>
                   <div className="h-2 bg-muted rounded-full overflow-hidden">
                     <motion.div
-                      className="h-full bg-linear-to-r from-secondary to-accent rounded-full"
+                      className="h-full bg-gradient-to-r from-secondary to-accent rounded-full"
                       initial={{ width: 0 }}
                       whileInView={{ width: '75%' }}
                       viewport={{ once: true }}
@@ -276,7 +276,7 @@ export function AboutClient({
         {/* Learning */}
         <FadeIn delay={0.4}>
           <Card className="group hover:shadow-2xl transition-shadow duration-300 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-accent/20 to-transparent rounded-bl-full" />
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-accent/20 to-transparent rounded-bl-full" />
 
             <div className="relative">
               <div className="flex items-center gap-3 mb-4">
@@ -300,7 +300,7 @@ export function AboutClient({
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
                     whileHover={{ scale: 1.1, y: -2 }}
-                    className="px-4 py-2 bg-linear-to-r from-primary/10 to-accent/10 text-primary rounded-full text-sm font-semibold cursor-pointer border border-primary/20 hover:border-primary/40 transition-colors"
+                    className="px-4 py-2 bg-gradient-to-r from-primary/10 to-accent/10 text-primary rounded-full text-sm font-semibold cursor-pointer border border-primary/20 hover:border-primary/40 transition-colors"
                   >
                     {platform}
                   </motion.span>

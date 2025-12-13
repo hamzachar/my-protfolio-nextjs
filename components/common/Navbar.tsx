@@ -29,6 +29,7 @@ export function Navbar() {
       setIsScrolled(window.scrollY > 20);
     };
 
+    handleScroll(); // Check initial scroll position
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -48,6 +49,7 @@ export function Navbar() {
           ? 'bg-background/95 backdrop-blur-lg shadow-lg border-b border-border'
           : 'bg-transparent'
       )}
+      suppressHydrationWarning
     >
       <Container>
         <div className="flex items-center justify-between h-16">

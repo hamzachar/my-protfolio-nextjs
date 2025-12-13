@@ -1,10 +1,13 @@
 'use client';
 
-import { useState, useTransition } from 'react';
+import { useActionState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
-import { submitContactForm, type ContactFormData } from '@/lib/actions/contact';
+import {
+  submitContactForm,
+  type ContactFormState,
+} from '@/lib/actions/contact';
 
 interface ContactFormProps {
   labels: {
@@ -23,43 +26,31 @@ interface ContactFormProps {
   };
 }
 
+const initialState: ContactFormState = {
+  success: undefined,
+  message: undefined,
+  errors: undefined,
+};
+
 export function ContactForm({ labels }: ContactFormProps) {
-  const [isPending, startTransition] = useTransition();
-  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [formData, setFormData] = useState<ContactFormData>({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
+  // Use React 19's useActionState hook for form handling
+  const [state, formAction, isPending] = useActionState(
+    submitContactForm,
+    initialState
+  );
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const formRef = useRef<HTMLFormElement>(null);
 
-    startTransition(async () => {
-      const result = await submitContactForm(formData);
-
-      if (result.success) {
-        setStatus('success');
-        setFormData({ name: '', email: '', subject: '', message: '' });
-        setTimeout(() => setStatus('idle'), 5000);
-      } else {
-        setStatus('error');
-        setTimeout(() => setStatus('idle'), 5000);
-      }
-    });
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
+  // Reset form on successful submission
+  useEffect(() => {
+    if (state?.success) {
+      formRef.current?.reset();
+    }
+  }, [state?.success]);
 
   return (
     <Card className="p-8">
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form ref={formRef} action={formAction} className="space-y-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-2">
             {labels.name}
@@ -68,12 +59,17 @@ export function ContactForm({ labels }: ContactFormProps) {
             type="text"
             id="name"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
             placeholder={labels.namePlaceholder}
             required
+            aria-invalid={state?.errors?.name ? 'true' : 'false'}
+            aria-describedby={state?.errors?.name ? 'name-error' : undefined}
             className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary transition-all"
           />
+          {state?.errors?.name && (
+            <p id="name-error" className="text-red-500 text-sm mt-1">
+              {state.errors.name[0]}
+            </p>
+          )}
         </div>
 
         <div>
@@ -84,12 +80,17 @@ export function ContactForm({ labels }: ContactFormProps) {
             type="email"
             id="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
             placeholder={labels.emailPlaceholder}
             required
+            aria-invalid={state?.errors?.email ? 'true' : 'false'}
+            aria-describedby={state?.errors?.email ? 'email-error' : undefined}
             className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary transition-all"
           />
+          {state?.errors?.email && (
+            <p id="email-error" className="text-red-500 text-sm mt-1">
+              {state.errors.email[0]}
+            </p>
+          )}
         </div>
 
         <div>
@@ -100,12 +101,19 @@ export function ContactForm({ labels }: ContactFormProps) {
             type="text"
             id="subject"
             name="subject"
-            value={formData.subject}
-            onChange={handleChange}
             placeholder={labels.subjectPlaceholder}
             required
+            aria-invalid={state?.errors?.subject ? 'true' : 'false'}
+            aria-describedby={
+              state?.errors?.subject ? 'subject-error' : undefined
+            }
             className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary transition-all"
           />
+          {state?.errors?.subject && (
+            <p id="subject-error" className="text-red-500 text-sm mt-1">
+              {state.errors.subject[0]}
+            </p>
+          )}
         </div>
 
         <div>
@@ -116,35 +124,42 @@ export function ContactForm({ labels }: ContactFormProps) {
             id="message"
             name="message"
             rows={5}
-            value={formData.message}
-            onChange={handleChange}
             placeholder={labels.messagePlaceholder}
             required
+            aria-invalid={state?.errors?.message ? 'true' : 'false'}
+            aria-describedby={
+              state?.errors?.message ? 'message-error' : undefined
+            }
             className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none transition-all"
           />
+          {state?.errors?.message && (
+            <p id="message-error" className="text-red-500 text-sm mt-1">
+              {state.errors.message[0]}
+            </p>
+          )}
         </div>
 
         <Button type="submit" size="lg" className="w-full" disabled={isPending}>
           {isPending ? labels.sending : labels.send}
         </Button>
 
-        {status === 'success' && (
+        {state?.success && state.message && (
           <motion.p
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-green-600 text-center font-medium"
           >
-            {labels.success}
+            {state.message}
           </motion.p>
         )}
 
-        {status === 'error' && (
+        {state?.success === false && state.message && (
           <motion.p
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-red-600 text-center font-medium"
           >
-            {labels.error}
+            {state.message}
           </motion.p>
         )}
       </form>

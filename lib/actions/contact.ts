@@ -15,9 +15,31 @@ const contactSchema = z.object({
 
 export type ContactFormData = z.infer<typeof contactSchema>;
 
-export async function submitContactForm(data: ContactFormData) {
+export type ContactFormState = {
+  success?: boolean;
+  message?: string;
+  errors?: {
+    name?: string[];
+    email?: string[];
+    subject?: string[];
+    message?: string[];
+  };
+};
+
+// Server Action compatible with useActionState
+export async function submitContactForm(
+  prevState: ContactFormState | null,
+  formData: FormData
+): Promise<ContactFormState> {
   try {
-    // Validate data
+    // Extract and validate data from FormData
+    const data = {
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      subject: formData.get('subject') as string,
+      message: formData.get('message') as string,
+    };
+
     const validated = contactSchema.parse(data);
 
     // Send email using Resend
@@ -142,10 +164,21 @@ export async function submitContactForm(data: ContactFormData) {
   } catch (error) {
     // Handle validation errors
     if (error instanceof z.ZodError) {
+      const errors: ContactFormState['errors'] = {};
+      error.issues.forEach(issue => {
+        const field = issue.path[0] as keyof typeof errors;
+        if (field) {
+          if (!errors[field]) {
+            errors[field] = [];
+          }
+          errors[field]!.push(issue.message);
+        }
+      });
+
       return {
         success: false,
         message: 'Please check your form inputs.',
-        errors: error.issues,
+        errors,
       };
     }
 

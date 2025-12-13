@@ -1,35 +1,30 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
+import { useSyncExternalStore } from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    // Check for saved theme preference or default to light
-    if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('theme') as
-        | 'light'
-        | 'dark'
-        | null;
-      const prefersDark = window.matchMedia(
-        '(prefers-color-scheme: dark)'
-      ).matches;
-      return savedTheme || (prefersDark ? 'dark' : 'light');
-    }
-    return 'light';
-  });
+  const { theme, setTheme } = useTheme();
 
-  useEffect(() => {
-    // Apply theme class to document element
-    document.documentElement.classList.toggle('dark', theme === 'dark');
-  }, [theme]);
+  // Use useSyncExternalStore to avoid hydration mismatch
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  );
+
+  if (!mounted) {
+    return (
+      <div className="rounded-lg p-2 w-9 h-9" aria-label="Loading theme toggle">
+        {/* Placeholder to prevent layout shift */}
+      </div>
+    );
+  }
 
   const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-    document.documentElement.classList.toggle('dark', newTheme === 'dark');
+    setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
   return (
@@ -40,10 +35,10 @@ export function ThemeToggle() {
       className="rounded-lg p-2 hover:bg-muted transition-colors"
       aria-label="Toggle theme"
     >
-      {theme === 'light' ? (
-        <FiMoon className="w-5 h-5" />
-      ) : (
+      {theme === 'dark' ? (
         <FiSun className="w-5 h-5" />
+      ) : (
+        <FiMoon className="w-5 h-5" />
       )}
     </motion.button>
   );
