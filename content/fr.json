@@ -9,7 +9,7 @@
   },
   "hero": {
     "greeting": "Bonjour, je suis",
-    "title": "Développeur Front-End Senior",
+    "title": "Développeur Front-End Senior spécialisé en React & Next.js, avec appétence backend Node.js / NestJS",
     "subtitle": "Spécialisé en React.js, Next.js & TypeScript / Node.js, Express.js & NestJS",
     "description": "Passionné par la création d'expériences utilisateur exceptionnelles avec les technologies web modernes.",
     "cta": {
@@ -22,7 +22,7 @@
     "title": "À propos",
     "subtitle": "Apprenez à me connaître",
     "bio": {
-      "paragraph1": "Je suis un Développeur Front-End Senior avec 9 ans d'expérience, spécialisé en React.js et frameworks JavaScript modernes.",
+      "paragraph1": "Je suis développeur Front-End senior avec 9 ans d’expérience, spécialisé en React.js et les frameworks JavaScript modernes, et disposant d’une solide expérience en développement backend avec Node.js, Express.js et NestJS.",
       "paragraph2": "J'ai un historique prouvé de livraison d'applications web de haute qualité et évolutives pour des entreprises majeures comme Disney, Capgemini et Ekino.",
       "paragraph3": "Mon expertise réside dans la création d'interfaces utilisateur performantes, accessibles et maintenables tout en suivant les meilleures pratiques et standards de l'industrie."
     },
